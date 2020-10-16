@@ -1,1 +1,19 @@
-c
+DATASETS SOURCES
+
+Worldwide Spread Log (Covid to and fro countries) : 21-07-2020
+https://data.mendeley.com/datasets/vw427wzzkk/5
+
+owid-covid-data (COVID): continent, country, cases, population, sex -automated update (downloaded 10th oct)
+https://github.com/owid/covid-19-data/tree/master/public/data (Gotten from https://ourworldindata.org/coronavirus)
+
+country health care spending: Jan. 22 - March 23
+https://www.kaggle.com/kboghe/covid-19-initial-spread-with-metadata-by-country
+
+country temperature: 
+covid data (COVID_ country temperature): long,lat,country,temp- 6Mths ago 
+https://www.kaggle.com/jadson666/dataset-coronavirus-spread-with-temperatures
+4mths ago (city temperature)
+https://www.kaggle.com/sudalairajkumar/daily-temperature-of-major-cities
+
+unemployment rate: 
+https://www.imf.org/external/datamapper/LUR@WEO/OEMDC/ADVEC/WEOWORLD/VEN
