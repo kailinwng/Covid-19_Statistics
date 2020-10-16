@@ -1,0 +1,193 @@
+Continent,Country,Date of First Case(s),Last_Country,Confirmed Case(s) at First Day,Age of First Case(s),Date of First Death(s),Age of First Death(s)
+Asia,China,17-Nov-19,Starting Country,1,55,No Trace,No Trace
+Europe,France,27-Dec-19,N/A,1,43,15-Feb-20,80
+Asia,Nepal,13-Jan-20,China,1,32,16-May-20,29
+Asia,Thailand,13-Jan-20,China,1,61,01-Mar-20,35
+Asia,Japan,16-Jan-20,China,1,30+,13-Feb-20,80+
+Asia,South Korea,20-Jan-20,China,1,35,20-Feb-20,63
+North America,United States,21-Jan-20,China,1,35,06-Feb-20,57
+Asia,Taiwan,21-Jan-20,China,1,50,16-Feb-20,61
+Asia,Singapore,23-Jan-20,China,1,66,21-Mar-20,"75,64"
+Asia,Vietnam,23-Jan-20,China,1,66,No death till 16 May 2020,N/A
+Australia,Australia,25-Jan-20,China,4,"50+,50+30+,40+",01-Mar-20,78
+Asia,Malaysia,25-Jan-20,China,3,"65,2,11",17-Mar-20,"60,34"
+North America,Canada,25-Jan-20,China,1,50+,09-Mar-20,No Trace
+Asia,Sri Lanka,27-Jan-20,China,1,43,28-Mar-20,65
+Europe,Germany,27-Jan-20,China,1,33,10-Mar-20,"89,78"
+Asia,Cambodia,27-Jan-20,China,1,60,No death till 16 May 2020,N/A
+Asia,United Arab Emirates,29-Jan-20,China,1,73,20-Mar-20,"78,58"
+Asia,Philippines,30-Jan-20,China,1,38,01-Feb-20,44
+Asia,India,30-Jan-20,China,1,No Trace,13-Mar-20,76
+Europe,Italy,31-Jan-20,China,2,No Trace,22-Feb-20,78
+Europe,United Kingdom,31-Jan-20,China,2,"50, 23",05-Mar-20,70+
+Europe,Sweden,31-Jan-20,China,1,20,11-Mar-20,70+
+Europe,Spain,31-Jan-20,Germany,1,No Trace,13-Feb-20,69
+Asia,Russia,31-Jan-20,Iran,2,No Trace,19-Mar-20,79
+Europe,Belgium,04-Feb-20,China,1,54,11-Mar-20,"90,73,86"
+"Asia, Africa",Egypt,14-Feb-20,China,1,32,08-Mar-20,60
+Asia,Iran,19-Feb-20,China,2,No Trace,20-Feb-20,No Trace
+Asia,Lebanon,21-Feb-20,Iran,1,45,10-Mar-20,56
+Asia,Bahrain,21-Feb-20,"Iran, United Arab Emirates",1,No Trace,16-Mar-20,65
+Asia,Israel,21-Feb-20,Japan ,1,No Trace,18-Apr-20,78
+Asia,Iraq,22-Feb-20,Iran,1,No Trace,04-Mar-20,63
+Asia,Afghanistan,24-Feb-20,Iran,1,35,26-Feb-20,40
+Asia,Kuwait,24-Feb-20,Iran,3,"61,53, No Trace",04-Apr-20,46
+Asia,Oman,24-Feb-20,Iran,2,No Trace,31-Mar-20,72
+Africa,Algeria,25-Feb-20,Italy,1,Unspecified,12-Mar-20,67
+Europe,Austria,25-Feb-20,Italy,2,24,12-Mar-20,69
+Europe,Croatia,25-Feb-20,Italy,1,26,16-May-20,70
+Europe,Switzerland,25-Feb-20,Italy,1,74,05-Mar-20,74
+Europe,Norway,26-Feb-20,China,3,No Trace,12-Mar-20,No Trace
+Asia,Pakistan,26-Feb-20,Iran,2,"22, No Trace",20-Mar-20,77
+"Asia, Europe",Georgia,26-Feb-20,"Iran, Azerbaijan",1,No Trace,12-Mar-20,67
+South America,Brazil,26-Feb-20,Italy,1,61,10-Apr-20,15
+Europe,North Macedonia,26-Feb-20,Italy,1,49,22-Mar-20,57
+Europe,Greece,26-Feb-20,Italy,1,38,12-Mar-20,66
+Europe,Romania,26-Feb-20,Italy,1,No Trace,22-Mar-20,67
+Europe,Finland,26-Feb-20,Italy,1,No Trace,20-Mar-20,No Trace
+Asia,Qatar,27-Feb-20,Iran,1,36,28-Mar-20,57
+Europe,Estonia,27-Feb-20,Iran,1,No Trace,25-Mar-20,83
+Africa,Nigeria,27-Feb-20,Italy,1,No Trace,23-Mar-20,67
+Europe,Netherlands,27-Feb-20,Italy,1,56,06-Mar-20,86
+Europe,San Marino,27-Feb-20,Italy,1,88,01-Mar-20,88
+Europe,Denmark,27-Feb-20,Italy,1,No Trace,12-Mar-20,No Trace
+"Asia, Europe",Azerbaijan,28-Feb-20,Iran,1,No Trace,12-Mar-20,51
+Europe,Belarus,28-Feb-20,Iran,1,No Trace,31-Mar-20,75
+Australia,New Zealand,28-Feb-20,"Iran, Indonesia",1,60+,29-Mar-20,70+
+North America,Mexico,28-Feb-20,Italy,3,"35,59,41",18-Mar-20,41
+Europe,Iceland,28-Feb-20,Italy,1,40+,24-Mar-20,70
+Europe,Lithuania,28-Feb-20,Italy,1,39,20-Mar-20,83
+Europe,Luxembourg,29-Feb-20,Italy,1,40+,13-Mar-20,94
+Europe,Ireland,29-Feb-20,Italy,1,No Trace,11-Mar-20,No Trace
+Europe,Monaco,29-Feb-20,No Trace,1,No Trace,28-Mar-20,No Trace
+South America,Ecuador,29-Feb-20,Spain,1,70+,14-Mar-20,No Trace
+Asia,Armenia,01-Mar-20,Iran,1,29,26-Mar-20,72
+North America,Dominican Republic,01-Mar-20,Italy,1,63,16-Mar-20,47
+Europe,Czech Republic,01-Mar-20,Italy,3,No Trace,23-Mar-20,95
+Africa,Senegal,02-Mar-20,France,1,54,01-Apr-20,68
+Asia,Saudi Arabia,02-Mar-20,"Iran, Bahrain",1,No Trace,23-Mar-20,51
+Africa,Tunisia,02-Mar-20,Italy,1,40,19-Mar-20,72
+Europe,Andorra,02-Mar-20,Italy,1,20,22-Mar-20,88
+Africa,Morocco,02-Mar-20,Italy,1,No Trace,10-Mar-20,89
+Europe,Latvia,02-Mar-20,Italy,1,99,03-Apr-20,99
+Asia,Jordan,02-Mar-20,Italy ,1,No Trace,28-Mar-20,83
+Europe,Portugal,02-Mar-20,"Italy, Spain",2,"60,33",16-Mar-20,80
+Asia,Indonesia,02-Mar-20,Japan,2,"64,31",11-Mar-20,53
+South America,Argentina,03-Mar-20,Italy,1,43,08-Mar-20,64
+South America,Chile,03-Mar-20,Italy,1,33,22-Mar-20,83
+Europe,Ukraine,03-Mar-20,"Italy, Romania ",1,No Trace,13-Mar-20,71
+Europe,Liechtenstein,03-Mar-20,Switzerland,1,No Trace,04-Apr-20,No Trace
+Europe,Poland,04-Mar-20,Germany,1,57,12-Mar-20,57
+Europe,Hungary,04-Mar-20,Iran,2,No Trace,15-Mar-20,75
+Europe,Slovenia,04-Mar-20,Italy,1,No Trace,14-Mar-20,No Trace
+Asia,West Bank and Gaza,05-Mar-20,"Greece, Pakistan, Egypt",7,No Trace,25-Mar-20,60
+Africa,South Africa,05-Mar-20,Italy,1,38,27-Mar-20,48
+Europe,Bosnia and Herzegovina,05-Mar-20,Italy,2,No Trace,23-Mar-20,No Trace
+Europe,Vatican City,05-Mar-20,No Trace,1,No Trace,No death till 16 May 2020,N/A
+Africa,Togo,06-Mar-20,"Benin, Germany, France, Turkey",1,42,27-Mar-20,No Trace
+Africa,Cameroon,06-Mar-20,France,1,58,24-Mar-20,No Trace
+Europe,Serbia,06-Mar-20,Hungary,1,43,20-Mar-20,59
+Asia,Bhutan,06-Mar-20,India,1,76,No death till 16 May 2020,N/A
+South America,Colombia,06-Mar-20,Italy,1,19,22-Mar-20,58
+Europe,Slovakia,06-Mar-20,Italy,1,52,30-Mar-20,60
+South America,Peru,06-Mar-20,"Spain, France, Czech Republic",1,25,19-Mar-20,78
+North America,Costa Rica,06-Mar-20,United States,1,49,18-Mar-20,87
+South America,Paraguay,07-Mar-20,Ecuador,1,32,20-Mar-20,No Trace
+Europe,Moldova,07-Mar-20,Italy,1,48,18-Mar-20,61
+Asia,Maldives,07-Mar-20,Italy,2,No Trace,30-Apr-20,83
+Europe,Malta,07-Mar-20,Italy,3,12,08-Apr-20,92
+Asia,Bangladesh,08-Mar-20,Italy,3,Unspecified,18-Mar-20,70+
+Asia,Bulgaria,08-Mar-20,N/A,4,"27, 25, No Trace, No Trace",11-Mar-20,66
+Africa,Burkina Faso,09-Mar-20,France,2,No Trace,19-Mar-20,62
+Europe,Albania,09-Mar-20,Italy,2,"54,28",11-Mar-20,73
+Europe,Cyprus,09-Mar-20,"Italy, United Kingdom",2,25,28-Mar-20,67
+Asia,Brunei,09-Mar-20,Malaysia,1,53,28-Mar-20,64
+North America,Panama,09-Mar-20,Spain,1,40,10-Mar-20,No Trace
+Africa,Congo (Kinshasa),10-Mar-20,Belgium,1,No Trace,31-Mar-20,81
+Asia,Mongolia,10-Mar-20,France,1,57,No death till 16 May 2020,N/A
+South America,Bolivia,10-Mar-20,Italy,2,"60,64",30-Mar-20,78
+North America,Honduras,10-Mar-20,"Spain, Switzerland",2,"42,37",26-Mar-20,60
+North America,Jamaica,10-Mar-20,United Kingdom,1,No Trace,18-Mar-20,79
+Africa,Cote d'Ivoire,11-Mar-20,Italy,1,45,29-Mar-20,Unspecified
+North America,Cuba,11-Mar-20,Italy,3,No Trace,18-Mar-20,61
+North America,Saint Vincent and the Grenadines,11-Mar-20,United Kingdom,1,30+,No death till 16 May 2020,N/A
+"Asia, Europe",Turkey,11-Mar-20,Unspecified ,1,No Trace,17-Mar-20,89
+Africa,Gabon,12-Mar-20,France,1,27,20-Mar-20,50
+Africa,Ghana,12-Mar-20,"Norway, Turkey",2,No Trace,21-Mar-20,61
+South America,Trinidad and Tobago,12-Mar-20,Switzerland,1,52,25-Mar-20,77
+South America,Guyana,12-Mar-20,United States,1,52,11-Mar,52
+Africa,Guinea,13-Mar-20,Belgium,1,49,15-Apr-20,75
+Africa,Ethiopia,13-Mar-20,Burkina Faso,1,48,05-Apr-20,60
+Africa,Mauritania,13-Mar-20,France,1,No Trace,30-Mar-20,48
+Asia,Kazakhstan,13-Mar-20,Germany,2,No Trace,26-Mar-20,No Trace
+North America,Guatemala,13-Mar-20,Italy,1,No Trace,16-Mar-20,85
+South America,Uruguay,13-Mar-20,Italy ,4,No Trace,28-Mar-20,71
+Europe,Kosovo,13-Mar-20,Italy ,2,"77,20",22-Mar-20,No Trace
+North America,Antigua and Barbuda,13-Mar-20,United Kingdom,1,No Trace,07-Apr-20,48
+North America,Saint Lucia,13-Mar-20,United Kingdom,1,63,No death till 16 May 2020,N/A
+Africa,Sudan,13-Mar-20,United Arab Emirates,1,50,12-Mar-20,50
+South America,Venezuela,13-Mar-20,Unspecified ,2,31,26-Mar-20,47
+South America,Suriname,13-Mar-20,Unspecified ,1,No Trace,03-Apr-20,No Trace
+Africa,Kenya,13-Mar-20,"United States, United Kingdom",1,27,26-Mar-20,66
+Africa,Congo (Brazzaville),14-Mar-20,France,1,50,01-Apr-20,No Trace
+Africa,Rwanda,14-Mar-20,India,1,No Trace,No death till 16 May 2020,N/A
+Africa,Seychelles,14-Mar-20,Italy,2,No Trace,No death till 16 May 2020,N/A
+Africa,Central African Republic,14-Mar-20,Italy,1,74,No death till 16 May 2020,N/A
+Africa,Namibia,14-Mar-20,Spain,2,No Trace,No death till 16 May 2020,N/A
+Africa,Equatorial Guinea,14-Mar-20,Spain,1,42,22-Apr-20,No Trace
+Africa,Eswatini,14-Mar-20,"United States, Lesotho",1,33,16-Apr-20,59
+Asia,Uzbekistan,15-Mar-20,France ,1,No Trace,27-Mar-20,72
+North America,Bahamas,15-Mar-20,N/A,1,61,06-Apr-20,80
+Africa,Tanzania,16-Mar-20,Belgium,1,46,31-Mar-20,49
+Africa,Benin,16-Mar-20,"Burkina Faso, Belgium",1,49,06-Apr-20,43
+Africa,Somalia,16-Mar-20,China,1,46,08-Apr-20,58
+Africa,Liberia,16-Mar-20,Switzerland,1,No Trace,04-Apr-20,72
+Europe,Montenegro,17-Mar-20,"Spain, United States",2,"72, 47",23-Mar-20,65
+Africa,Gambia,17-Mar-20,United Kingdom,1,No Trace,23-Mar-20,70
+North America,Barbados,17-Mar-20,United States,2,"38,39",05-Apr-20,81
+Africa,Zambia,18-Mar-20,France,2,No Trace,02-Apr-20,No Trace
+North America,Nicaragua,18-Mar-20,Panama,1,40,26-Mar-20,No Trace
+Asia,Kyrgyzstan,18-Mar-20,Saudi Arabia,3,No Trace,03-Apr-20,60
+Africa,Djibouti,18-Mar-20,Spain,1,No Trace,09-Apr-20,No Trace
+Africa,Mauritius,18-Mar-20,"United Kingdom, Cruise Ship*",3,No Trace,21-Mar-20,No Trace
+Africa,Chad,19-Mar-20,Cameroon,1,No Trace,19-Mar-20,No Trace
+North America,El Salvador,19-Mar-20,Italy,1,No Trace,01-Apr-20,60
+Africa,Niger,19-Mar-20,"Togo,Cote d'Ivoire, Burkina Faso",1,36,24-Mar-20,63
+Australia,Fiji,19-Mar-20,No Trace,1,27,No death till 16 May 2020,N/A
+North America,Haiti,19-Mar-20,United States,2,No Trace,05-Apr-20,55
+Australia,Papua New Guinea,20-Mar-20,Spain,1,45,No death till 16 May 2020,N/A
+Africa,Madagascar,20-Mar-20,No Trace,3,No Trace,No death till 16 May 2020,N/A
+Africa,Cabo Verde,20-Mar-20,United Kingdom,1,62,24-Mar-20,62
+Africa,Eritrea,21-Mar-20,Norway,1,39,No death till 16 May 2020,N/A
+Africa,Angola,21-Mar-20,Portugal,2,"38,30+",30-Mar-20,"59, 37"
+Africa,Zimbabwe,21-Mar-20,"United Kingdom, South Africa",1,38,23-Mar-20,30
+Asia,Timor-Leste,21-Mar-20,Unspecified,1,No Trace,No death till 16 May 2020,N/A
+Africa,Mozambique,22-Mar-20,United Kingdom,1,75,No death till 16 May 2020,N/A
+North America,Grenada,22-Mar-20,United Kingdom,1,50,No death till 16 May 2020,N/A
+North America,Dominica,22-Mar-20,United Kingdom,1,54,No death till 16 May 2020,N/A
+South America,Uganda,22-Mar-20,United Arab Emirates,1,36,No death till 16 May 2020,N/A
+Asia,Syria,22-Mar-20,Unspecified,1,20,29-Mar-20,No Trace
+North America,Belize,23-Mar-20,United States,1,38,07-Apr-20,54
+Asia,Myanmar,23-Mar-20,"United States, United Kingdom",2,"36, 26",31-Mar-20,69
+Africa,Libya,24-Mar-20,Saudi Arabia. Tunisia,1,73,02-Apr-20,85
+Asia,Laos,24-Mar-20,"Thailand, Cambodia",2,"28, 36",No death till 16 May 2020,N/A
+North America,Saint Kitts and Nevis,24-Mar-20,"United States, Italy",2,"21,57",No death till 16 May 2020,N/A
+Africa,Guinea-Bissau,25-Mar-20,Congo (Kinshasa),2,Unspecified,26-Apr-20,53
+Africa,Mali,25-Mar-20,France,2,"49,62",28-Mar-20,No Trace
+Africa,Botswana,30-Mar-20,"United Kingdom, Thailand",3,Unspecified,01-Apr-20,79
+Africa,Sierra Leone,31-Mar-20,France,1,37,23-Apr-20,"76,69"
+Africa,Burundi,31-Mar-20,"Rwanda, United Arab Emirates",2,"56,42",13-Apr-20,No Trace
+Africa,Malawi,01-Apr-20,India,3,"63, N/A, N/A",07-Apr-20,51
+Africa,Western Sahara,04-Apr-20,No Trace,1,No Trace,No death till 16 May 2020,N/A
+Africa,South Sudan,05-Apr-20,Ethiopia,1,29,14-May-20,51
+Africa,Sao Tome and Principe,06-Apr-20,No Trace,4,No Trace,30-Apr-20,55
+Asia,Yemen,10-Apr-20,No Trace,1,60,29-Apr-20,No Trace
+Africa,Comoros,30-Apr-20,France,1,50,07-May-20,No Trace
+Asia,Tajikistan,30-Apr-20,No Trace,15,No Trace,02-May-20,No Trace
+Africa,Lesotho,13-May-20,Saudi Arabia,1,No Trace,"No death till May 16, 2020.",N/A
+,,,,,,,
+,*This is not a country. This is a ship. The name of the Cruise Ship was not given from the government.,,,,,,
+,"""N+"":  the age is not specified but greater than N",,,,,,
+,“No Trace”:  some data was not found ,,,,,,
+,“Unspecified”: not available from the authority,,,,,,
+,"“N/A”: for “Last Visited Country(s) of Confirmed Case(s)” column, “N/A” indicates that the confirmed case(s) of those countries do not have any travel history in recent past; in “Age of First Death(s)” column “N/A” indicates that those countries do not have may death case till May 16, 2020.",,,,,,
