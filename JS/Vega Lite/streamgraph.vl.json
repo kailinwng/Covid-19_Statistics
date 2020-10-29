@@ -1,6 +1,8 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
 "autosize":"fit",
+    "width":500,
+  "height":500,
   "data": {
     "url": "https://raw.githubusercontent.com/kailinwng/FIT3179-Viz-2/main/data/COVID.csv"
   },
