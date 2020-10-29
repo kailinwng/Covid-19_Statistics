@@ -1,0 +1,163 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+  "description": "An interactive map visualization on the spread of the Corona Virus from Country to Country.",
+  "autosize": "fit",
+  "width": 900,
+  "height": 500,
+  "params": [
+    {
+      "name": "style",
+      "bind": {
+        "input": "select",
+        "options": [null, "choropleth", "flow"],
+        "labels": [
+          "Plain map",
+          "Active Cases by Country",
+          "Spread of virus between countries"
+        ],
+        "name": "View Type: "
+      }
+    }
+  ],
+  "data": {
+    "url": "https://raw.githubusercontent.com/kailinwng/FIT3179-Viz-2/main/JS/world.geo.topojson",
+    "format": {"type": "topojson", "feature": "world"}
+  },
+  "transform": [
+    {
+      "lookup": "properties.sovereignt",
+      "from": {
+        "data": {
+          "url": "https://raw.githubusercontent.com/kailinwng/FIT3179-Viz-2/main/data/covid_10_10_2020.csv"
+        },
+        "key": "Country",
+        "fields": ["Active"]
+      }
+    },
+    {
+      "lookup": "properties.sovereignt",
+      "from": {
+        "data": {
+          "url": "https://raw.githubusercontent.com/kailinwng/FIT3179-Viz-2/main/data/world_country_and_usa_states_latitude_and_longitude_values.csv"
+        },
+        "key": "country",
+        "fields": ["latitude", "longitude"]
+      }
+    },
+    {
+      "lookup": "properties.sovereignt",
+      "from": {
+        "data": {
+          "url": "https://raw.githubusercontent.com/kailinwng/FIT3179-Viz-2/main/data/COVID-%20to%20and%20fro%20countries.csv"
+        },
+        "key": "country",
+        "fields": ["Country", "Last_Country"]
+      }
+    },
+    {"calculate": "datum.Active + 0.1", "as": "Active Cases"}
+  ],
+  "layer": [
+    {
+      "mark": {"type": "geoshape", "stroke": "#000000", "strokeWidth": 1},
+      "data": {
+        "url": "https://raw.githubusercontent.com/kailinwng/FIT3179-Viz-2/main/JS/world.geo.topojson",
+        "format": {"type": "topojson", "feature": "world"}
+      },
+      "encoding": {
+        "color": {
+          "field": "properties.continent",
+          "scale": {
+            "range": [
+              "#fdc086",
+              "#beaed4",
+              "#fbb4ae",
+              "#ffff99",
+              "#cbd5e8",
+              "#a6cee3"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "transform": [{"filter": "style=='choropleth'"}],
+      "mark": {"type": "geoshape"},
+      "encoding": {
+        "color": {
+          "field": "Active Cases",
+          "type": "quantitative",
+          "scale": {"type": "log"}
+        },
+        "tooltip": [
+          {
+            "field": "properties.sovereignt",
+            "type": "nominal",
+            "title": "Country"
+          },
+          {"field": "Active", "type": "quantitative"}
+        ]
+      }
+    },
+    {
+      "transform": [{"filter": "style=='flow'"}],
+      "mark": {"type": "circle"},
+      "encoding": {
+        "latitude": {"field": "latitude"},
+        "longitude": {"field": "longitude"},
+        "color": {"value": "red"},
+        "tooltip": [
+          {
+            "field": "properties.sovereignt",
+            "type": "nominal",
+            "title": "Country"
+          }
+        ]
+      }
+    },
+    {
+      "mark": {"type": "rule", "color": "#000", "opacity": 0.35},
+      "data": {
+        "url": "https://raw.githubusercontent.com/kailinwng/FIT3179-Viz-2/main/data/COVID-%20to%20and%20fro%20countries.csv"
+      },
+      "transform": [
+        {"filter": "style=='flow'"},
+        {
+          "filter": "datum.Last_Country!='N/A' && datum.Last_Country!='Unspecified'&& datum.Last_Country!='No Trace'"
+        },
+        {
+          "lookup": "Last_Country",
+          "from": {
+            "data": {
+              "url": "https://raw.githubusercontent.com/kailinwng/FIT3179-Viz-2/main/data/world_country_and_usa_states_latitude_and_longitude_values.csv"
+            },
+            "key": "country",
+            "fields": ["latitude", "longitude"]
+          },
+          "as": ["lat1", "lon1"]
+        },
+        {
+          "lookup": "Country",
+          "from": {
+            "data": {
+              "url": "https://raw.githubusercontent.com/kailinwng/FIT3179-Viz-2/main/data/world_country_and_usa_states_latitude_and_longitude_values.csv"
+            },
+            "key": "country",
+            "fields": ["latitude", "longitude"]
+          },
+          "as": ["lat2", "lon2"]
+        }
+      ],
+      "encoding": {
+        "latitude": {"field": "lat1"},
+        "longitude": {"field": "lon1"},
+        "latitude2": {"field": "lat2"},
+        "longitude2": {"field": "lon2"},
+        "tooltip": [
+          {"field": "Country"},
+          {"field": "Last_Country", "title": "Last Country Visited"}
+        ]
+      }
+    }
+  ],
+  "config": {}
+}

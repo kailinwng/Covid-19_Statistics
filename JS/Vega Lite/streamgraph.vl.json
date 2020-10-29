@@ -1,0 +1,54 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+  "width": 500,
+  "height": 500,
+  "data": {
+    "url": "https://raw.githubusercontent.com/kailinwng/FIT3179-Viz-2/main/data/COVID.csv"
+  },
+  "autosize": "fit",
+  "mark": "area",
+  "transform": [
+    {"filter": "datum.continent!=''"},
+    {"filter": {"timeUnit": "year", "field": "date", "gt": "2019"}}
+  ],
+  "encoding": {
+    "x": {
+      "timeUnit": "month",
+      "field": "date",
+      "title": "Month",
+      "axis": {
+        "gridDash": {
+          "condition": {
+            "test": {"field": "date", "timeUnit": "month", "equal": "9"},
+            "value": []
+          },
+          "value": [2, 2]
+        }
+      }
+    },
+    "y": {"aggregate": "sum", "field": "total_cases", "title": "Active Cases"},
+    "color": {
+      "field": "continent",
+      "scale": {
+        "range": [
+          "#fdc086",
+          "#beaed4",
+          "#fbb4ae",
+          "#ffffb3",
+          "#cbd5e8",
+          "#a6cee3"
+        ]
+      }
+    },
+    "tooltip": [
+      {"field": "date", "timeUnit": "month", "title": "Month"},
+      {"field": "continent", "title": "Continent"},
+      {
+        "aggregate": "sum",
+        "field": "total_cases",
+        "title": "Active Cases in Continent"
+      }
+    ]
+  },
+  "config": {}
+}
