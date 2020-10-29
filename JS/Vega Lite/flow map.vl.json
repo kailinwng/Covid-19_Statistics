@@ -2,8 +2,7 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
   "description": "An interactive map visualization on the spread of the Corona Virus from Country to Country.",
   "autosize": "fit",
-  "width": 900,
-  "height": 500,
+
   "params": [
     {
       "name": "style",
