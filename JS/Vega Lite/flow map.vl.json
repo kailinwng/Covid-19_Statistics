@@ -103,10 +103,22 @@
     {
       "transform": [{"filter": "style=='flow'"}],
       "mark": {"type": "circle"},
+            "selection": {
+            "loc": {
+      "type": "single",
+                "nearest": true,
+      "on": "mouseover","empty": "none"
+    }
+            },
       "encoding": {
         "latitude": {"field": "latitude"},
         "longitude": {"field": "longitude"},
         "color": {"value": "red"},
+                        "size": {
+          "condition": {
+        "selection": "loc", "value": 100
+      },"value":30
+        },
         "tooltip": [
           {
             "field": "properties.sovereignt",
