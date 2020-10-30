@@ -122,6 +122,23 @@
         </div>
     </div>
     <!-- end pure grid group -->
+   
+       <!-- pure grid group -->
+    <div class="pure-g">
+         <div class="pure-u-2-3">
+          <div id="vis4" class="vis-container"></div>
+        </div>
+      
+        <div class="pure-u-1-3">
+          <div class="description description-left">
+            <h2>Number of Deaths by Confirmed cases</h2>
+            <p>This chart shows the number of active cases each month per continent.</p>
+            <p>From this chart, we can see a spike in active cases in the month of September.</p>
+          </div>
+        </div>
+
+    </div>
+    <!-- end pure grid group -->
 
   
     <div class="pure-g">
@@ -137,7 +154,9 @@
   var specVis1 = "JS/Vega%20Lite/isotype.vl.json";
   var specVis2= "JS/Vega%20Lite/flow%20map.vl.json";
   var specVis3= "JS/Vega%20Lite/streamgraph.vl.json";
+  var specVis4= "JS/Vega%20Lite/scatterplot.vl.json";
 
+  
   vegaEmbed('#vis1', specVis1, {"actions": false}).then(function(result) {
     // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
   }).catch(console.error);
@@ -147,6 +166,10 @@
   }).catch(console.error);
   
   vegaEmbed('#vis3', specVis3, {"actions": false}).then(function(result) {
+    // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+  }).catch(console.error);  
+  
+    vegaEmbed('#vis4', specVis4, {"actions": false}).then(function(result) {
     // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
   }).catch(console.error);  
 
