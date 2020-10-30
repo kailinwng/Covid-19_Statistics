@@ -117,8 +117,8 @@
         "color": {"value": "red"},
                         "size": {
           "condition": {
-        "selection": "loc", "value": 100
-      },"value":30
+        "selection": "loc", "value": 120
+      },"value":40
         },
         "tooltip": [
           {
