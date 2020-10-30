@@ -76,7 +76,8 @@
               "#cbd5e8",
               "#a6cee3"
             ]
-          }
+          },
+          "title":"Continent"
         }
       }
     },
@@ -116,7 +117,7 @@
       }
     },
     {
-      "mark": {"type": "rule", "color": "#000", "opacity": 0.35},
+      "mark": {"type": "rule", "color": "#0011ff", "opacity": 0.35},
       "data": {
         "url": "https://raw.githubusercontent.com/kailinwng/FIT3179-Viz-2/main/data/COVID-%20to%20and%20fro%20countries.csv"
       },
