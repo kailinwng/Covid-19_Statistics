@@ -1,7 +1,8 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
-  "width": 600,
-  "height": 500,
+  "width":400,
+  "height":500,
+
   "data": {
     "url": "https://raw.githubusercontent.com/kailinwng/FIT3179-Viz-2/main/data/COVID_19_10_Oct_2020.csv"
   },
@@ -27,7 +28,7 @@
           "Asia",
           "Europe",
           "North America",
-          "Oceania",
+          "Oceania",          
           "South America"
         ],
         "labels": [
@@ -36,7 +37,7 @@
           "Asia",
           "Europe",
           "North America",
-          "Oceania",
+          "Oceania",          
           "South America"
         ],
         "name": "Continent: "
@@ -79,7 +80,7 @@
           "bind": "legend"
         }
       },
-      "mark": "circle",
+      "mark":{"type": "point", "filled": true},
       "encoding": {
         "size": {
           "field": "Population",
@@ -91,22 +92,23 @@
           },
           "legend": null
         },
+        "shape":{"field":"Continent","legend":null},
         "color": {
           "field": "Continent",
           "type": "nominal",
           "scale": {
             "domain": [
-              "Africa",
-              "Asia",
-              "Europe",
-              "North America",
-              "Oceania",
-              "South America"
+          "Africa",
+          "Asia",
+          "Europe",
+          "North America",
+          "Oceania",          
+          "South America"
             ],
             "range": [
               "#ff7f00",
               "#984ea3",
-              "#e74598",
+              "#e74598",             
               "#f8e60c",
               "#08d0e3",
               "#0300d0"
@@ -121,6 +123,7 @@
           {"field": "Country", "type": "nominal"},
           {"field": "Active", "type": "quantitative", "format": ","},
           {"field": "Confirmed", "type": "quantitative", "format": ","},
+          
           {"field": "Deaths", "type": "quantitative", "format": ","},
           {"field": "Recovered", "type": "quantitative", "format": ","},
           {"field": "Population", "type": "quantitative", "format": ","}
@@ -150,12 +153,12 @@
           {"field": "Country", "type": "nominal"},
           {"field": "Active", "type": "quantitative", "format": ","},
           {"field": "Confirmed", "type": "quantitative", "format": ","},
+          
           {"field": "Deaths", "type": "quantitative", "format": ","},
           {"field": "Recovered", "type": "quantitative", "format": ","},
           {"field": "Population", "type": "quantitative", "format": ","}
         ]
       }
     }
-  ],
-  "config": {}
+  ]
 }
