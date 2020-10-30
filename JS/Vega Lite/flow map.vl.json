@@ -12,9 +12,9 @@
         "input": "select",
         "options": [null, "choropleth", "flow"],
         "labels": [
-          "Plain map",
-          "Active Cases by Country",
-          "Spread of virus between countries"
+          "World Map by Continent",
+          "Number of Active Cases by Country  ",
+          "Spread of Virus between Countries  "
         ],
         "name": "View Type: "
       }
