@@ -29,7 +29,7 @@
       "lookup": "properties.sovereignt",
       "from": {
         "data": {
-          "url": "https://raw.githubusercontent.com/kailinwng/FIT3179-Viz-2/main/data/covid_10_10_2020.csv"
+          "url": "https://raw.githubusercontent.com/kailinwng/FIT3179-Viz-2/main/data/COVID_19_10_Oct_2020.csv"
         },
         "key": "Country",
         "fields": ["Active"]
