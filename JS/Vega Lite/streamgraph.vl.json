@@ -33,11 +33,11 @@
       "scale": {
         "range": [
           "#fdc086",
-          "#beaed4",
-          "#fbb4ae",
-          "#ffffb3",
-          "#cbd5e8",
-          "#a6cee3"
+              "#beaed4",
+              "#fbb4ae",
+              "#ffff99",
+              "#a6cee3",
+              "#386cb0"
         ]
       },
       "title":"Continent"
