@@ -65,6 +65,11 @@
         "format": {"type": "topojson", "feature": "world"}
       },
       "encoding": {
+                "tooltip": {
+                    "condition": {
+        "test": "style==null","field":"properties.continent"
+      }
+                },
         "color": {
           "field": "properties.continent",
           "scale": {
