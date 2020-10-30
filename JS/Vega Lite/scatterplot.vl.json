@@ -78,7 +78,11 @@
           "type": "multi",
           "fields": ["Continent"],
           "bind": "legend"
-        }
+        },
+        "hover":{          "type": "single",
+        "on":"mouseover","empty": "none",
+          "fields": ["Country"]
+      }
       },
       "mark":{"type": "point", "filled": true},
       "encoding": {
@@ -92,6 +96,8 @@
           },
           "legend": null
         },
+        "stroke":{"condition": {"selection": "hover", "value": "black"},
+          "value": null},
         "shape":{"field":"Continent","legend":null},
         "color": {
           "field": "Continent",
