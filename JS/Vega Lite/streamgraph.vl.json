@@ -39,7 +39,8 @@
           "#cbd5e8",
           "#a6cee3"
         ]
-      }
+      },
+      "title":"Continent"
     },
     "tooltip": [
       {"field": "date", "timeUnit": "month", "title": "Month"},
