@@ -82,7 +82,8 @@
         "hover":{          "type": "single",
         "on":"mouseover","empty": "none",
           "fields": ["Country"]
-      }
+      },
+      "grid": {"type": "interval", "bind": "scales"}
       },
       "mark":{"type": "point", "filled": true},
       "encoding": {
