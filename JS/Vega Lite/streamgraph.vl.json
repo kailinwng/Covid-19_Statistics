@@ -16,7 +16,7 @@
     }},
   "encoding": {
     "x": {
-      "timeUnit": "month",
+      "timeUnit": "monthdate",
       "field": "date",
       "title": "Month",
       "axis": {
