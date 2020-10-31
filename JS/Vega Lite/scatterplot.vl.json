@@ -98,7 +98,7 @@
         },
         "stroke":{"condition": {"selection": "hover", "value": "black"},
           "value": null},
-        "shape":{"field":"Continent","legend":null},
+        
         "color": {
           "field": "Continent",
           "type": "nominal",
@@ -121,6 +121,7 @@
             ]
           }
         },
+        "shape":{"field":"Continent","type": "nominal","legend":null},
         "opacity": {
           "condition": {"selection": "continent_highlight", "value": 0.6},
           "value": 0.2
@@ -150,7 +151,7 @@
         "color": {"value": "black"},
         "opacity": {
           "condition": {
-            "test": "datum['Country'] == 'China' || datum['Country'] == 'Singapore' || datum['Country'] == 'Australia' || datum['Country'] == 'New Zealand' || datum['Country'] == 'Italy' || datum['Country'] == 'Yemen' ||  datum['Country'] == 'United States' ",
+            "test": "datum['Country'] == 'China' || datum['Country'] == 'Singapore' || datum['Country'] == 'Australia' || datum['Country'] == 'New Zealand' || datum['Country'] == 'Italy' || datum['Country'] == 'Syria' ||  datum['Country'] == 'United States' ||  datum['Country'] == 'Fiji' ||  datum['Country'] == 'Taiwan'",
             "value": 1
           },
           "value": 0
