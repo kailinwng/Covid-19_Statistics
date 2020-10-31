@@ -25,8 +25,8 @@
        background-color: #b3e2cd;
      }
      .page{
-       width: 900px;    
-       background-color: white;   
+       width: 900px;
+       background-color: white;
        margin: auto;
        padding: 50px;
        padding-top: 35px;
@@ -60,16 +60,16 @@
     <div class="pure-g">
       <div class="pure-u-2-3">
         <p>FIT3179 Visualization 2</p>
-        <h1>COVID-19 Statistics</h1>
+        <h1 style="color:red">COVID-19 Statistics 2020</h1>
         <h3>This page shows the distribution and statistics of Covid-19 cases in different parts of the world.</h5>
-        <p>Data used are from Janauary 2020 to October 13th 2020.</p>
+        <p>Data used are from Janauary 2020 to October 10th 2020.</p>
       </div>
         <div class="pure-u-1-3">
           <img src="images/Covid-19.png" alt="Covid-19">
         </div>
     </div>
     <!-- end pure grid group -->
-   
+
 
 
     <!-- pure grid group -->
@@ -99,7 +99,7 @@
         </div>
     </div>
     <!-- end pure grid group -->
-    
+
     <!-- pure grid group -->
     <div class="pure-g">
         <div class="pure-u-1-1">
@@ -122,13 +122,13 @@
         </div>
     </div>
     <!-- end pure grid group -->
-   
+
        <!-- pure grid group -->
     <div class="pure-g">
          <div class="pure-u-2-3">
           <div id="vis4" class="vis-container"></div>
         </div>
-      
+
         <div class="pure-u-1-3">
           <div class="description description-left">
             <h2>Number of Deaths by Confirmed cases</h2>
@@ -140,38 +140,38 @@
     </div>
     <!-- end pure grid group -->
 
-  
+
     <div class="pure-g">
       <div class="pure-u-1-1 small-font">
         <p>This visualisation is created by <a href="https://github.com/kailinwng" target="_blank">Kai Lin Wong</a>. The source codes and datasets can be found <a href="https://github.com/kailinwng/FIT3179-Viz-2" target="_blank">here</a>.</p>
       </div>
     </div>
-  
+
 
   </div> <!-- end page -->
-   
+
 <script type="text/javascript">
   var specVis1 = "JS/Vega%20Lite/isotype.vl.json";
   var specVis2= "JS/Vega%20Lite/flow%20map.vl.json";
   var specVis3= "JS/Vega%20Lite/streamgraph.vl.json";
   var specVis4= "JS/Vega%20Lite/scatterplot.vl.json";
 
-  
+
   vegaEmbed('#vis1', specVis1, {"actions": false}).then(function(result) {
     // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
   }).catch(console.error);
-  
+
    vegaEmbed('#vis2', specVis2, {"actions": false}).then(function(result) {
     // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
   }).catch(console.error);
-  
+
   vegaEmbed('#vis3', specVis3, {"actions": false}).then(function(result) {
     // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
-  }).catch(console.error);  
-  
+  }).catch(console.error);
+
     vegaEmbed('#vis4', specVis4, {"actions": false}).then(function(result) {
     // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
-  }).catch(console.error);  
+  }).catch(console.error);
 
 </script>
 </body>
