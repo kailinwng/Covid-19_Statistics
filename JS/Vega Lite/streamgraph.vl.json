@@ -6,12 +6,14 @@
   "data": {
     "url": "https://raw.githubusercontent.com/kailinwng/FIT3179-Viz-2/main/data/COVID.csv"
   },
-  "autosize": "fit",
   "mark": "area",
   "transform": [
     {"filter": "datum.continent!=''"},
     {"filter": {"timeUnit": "year", "field": "date", "gt": "2019"}}
   ],
+  "selection": {"grid": {
+      "type": "interval", "bind": "scales"
+    }},
   "encoding": {
     "x": {
       "timeUnit": "month",
