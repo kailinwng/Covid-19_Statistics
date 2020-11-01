@@ -6,7 +6,7 @@
   },
   "hconcat": [
     {
-      "width": 300,
+      "width": 280,
       "height": 460,
 
       "mark": {"type": "bar"},
@@ -80,7 +80,7 @@
       "title": {
         "text": "Temperature (°C)"
       },
-      "width": 350,
+      "width": 280,
       "height": 200,
       "mark": {"type": "rect", "strokeWidth": 2},
       "selection": {
@@ -141,7 +141,7 @@
         "text": "Humidity (%)"
       },
 
-      "width": 350,
+      "width": 280,
       "height": 200,
       "mark": {"type": "rect"},
       "selection": {
