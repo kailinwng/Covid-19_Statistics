@@ -1,35 +1,34 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
-  "title": {
-    "text": "Top 10 Countries affected by COVID-19",
-    "anchor": "middle",
-    "fontSize": 15
-  },
-  "center": true,
+
   "data": {
     "url": "https://raw.githubusercontent.com/kailinwng/FIT3179-Viz-2/main/data/COVID-%20Temperature%20and%20Humidity.csv"
   },
   "hconcat": [
     {
-      "width": 600,
-      "height": 600,
-      "title": "Reported Cases",
+      "width": 300,
+      "height": 460,
+
       "mark": {"type": "line"},
       "selection": {
         "country": {"type": "multi", "fields": ["Country"], "bind": "legend"},
-        "grid": {"type": "interval", "bind": "scales"}
+        "grid": {
+      "type": "interval", "bind": "scales"
+    }
       },
       "encoding": {
         "x": {
           "timeUnit": "monthdate",
           "field": "date",
-          "title": "Date",
+          "title": null,
           "axis": {"grid": false}
+          
         },
         "y": {
           "field": "confirmed",
           "aggregate": "sum",
           "axis": {"grid": true},
+          
           "title": "Total Confirmed Cases"
         },
         "color": {"field": "Country"},
@@ -58,122 +57,129 @@
         }
       ]
     },
-    {
-      "resolve": {
-        "legend": {"color": "independent"},
-        "scale": {"color": "independent"}
-      },
+    {  "resolve": {
+    "legend": {"color": "independent"},
+    "scale": {"color": "independent"}
+  },
       "vconcat": [
-        {
-          "title": {"text": "Temperature (°C)"},
-          "width": 600,
-          "height": 270,
-          "mark": {"type": "rect", "strokeWidth": 2},
-          "selection": {
-            "country": {"type": "interval"},
-            "grid": {"type": "interval", "bind": "scales"}
-          },
-          "encoding": {
-            "x": {
-              "timeUnit": "monthdate",
-              "field": "date",
-              "type": "ordinal",
-              "title": null
-            },
-            "y": {
-              "field": "Country",
-              "axis": {"grid": false},
-              "title": null,
-              "sort": null
-            },
-            "color": {
-              "field": "temperature",
-              "type": "quantitative",
-              "scale": {"scheme": "redyellowblue"},
-              "title": null,
-              "sort": "descending"
-            },
-            "tooltip": [
-              {"field": "Country", "type": "nominal"},
-              {
-                "field": "date",
-                "timeUnit": "monthdate",
-                "type": "ordinal",
-                "title": "Date"
-              },
-              {
-                "field": "temperature",
-                "type": "quantitative",
-                "title": "Temperature (°C)"
-              }
-            ],
-            "opacity": {
-              "condition": {"selection": "country", "value": 1},
-              "value": 0.2
-            }
-          },
-          "transform": [
-            {
-              "filter": "datum.Country == 'United States of America' || datum.Country == 'Italy' || datum.Country == 'Spain' || datum.Country == 'Germany' || datum.Country == 'China' || datum.Country == 'France' || datum.Country == 'Iran' || datum.Country == 'United Kingdom' || datum.Country == 'Switzerland' || datum.Country == 'Turkey'"
-            }
-          ]
+    {
+      "title": {
+        "text": "Temperature (°C)"
+      },
+      "width": 350,
+      "height": 200,
+      "mark": {"type": "rect", "strokeWidth": 2},
+      "selection": {
+        "country": {
+          "type": "interval"
         },
+        "grid": {
+      "type": "interval", "bind": "scales"
+    }
+      },
+      "encoding": {
+        "x": {
+          "timeUnit": "monthdate",
+          "field": "date",
+          "type": "ordinal",
+          "title": null
+        },
+        "y": {
+          "field": "Country",
+          "axis": {"grid": false},
+          "title": null,
+          "sort":null
+        },
+        "color": {
+          "field": "temperature",
+          "type": "quantitative",
+          "scale": {"scheme": "redyellowblue"},
+          "title": null,
+          "sort":"descending"
+        },
+        "tooltip": [
+          {"field": "Country", "type": "nominal"},
+          {
+            "field": "date",
+            "timeUnit": "monthdate",
+            "type": "ordinal",
+            "title": "Date"
+          },
+          {
+            "field": "temperature",
+            "type": "quantitative",
+            "title": "Temperature (°C)"
+          }
+        ],
+        "opacity": {
+          "condition": {"selection": "country", "value": 1},
+          "value": 0.2
+        }
+      },
+      "transform": [
         {
-          "title": {"text": "Humidity (%)"},
-          "width": 600,
-          "height": 270,
-          "mark": {"type": "rect"},
-          "selection": {
-            "country": {"type": "interval"},
-            "grid": {"type": "interval", "bind": "scales"}
+          "filter": "datum.Country == 'United States of America' || datum.Country == 'Italy' || datum.Country == 'Spain' || datum.Country == 'Germany' || datum.Country == 'China' || datum.Country == 'France' || datum.Country == 'Iran' || datum.Country == 'United Kingdom' || datum.Country == 'Switzerland' || datum.Country == 'Turkey'"
+        }
+      ]
+    },
+    {
+      "title": {
+        "text": "Humidity (%)"
+      },
+
+      "width": 350,
+      "height": 200,
+      "mark": {"type": "rect"},
+      "selection": {
+        "country": {
+          "type": "interval"
+        },
+        "grid": {
+      "type": "interval", "bind": "scales"
+    }
+      },
+      "encoding": {
+        "x": {
+          "timeUnit": "monthdate",
+          "field": "date",
+          "type": "ordinal",
+          "title": null
+        },
+        "y": {"field": "Country", "axis": {"grid": false}, "title": null,"sort":null},
+        "color": {
+          "field": "humidity",
+          "type": "quantitative",
+          "scale": {"scheme": "brownbluegreen"},
+          "title": null,
+          "sort":"ascending"
+        },
+        "tooltip": [
+          {"field": "Country", "type": "nominal"},
+          {
+            "field": "date",
+            "timeUnit": "monthdate",
+            "type": "ordinal",
+            "title": "Date"
           },
-          "encoding": {
-            "x": {
-              "timeUnit": "monthdate",
-              "field": "date",
-              "type": "ordinal",
-              "title": null
-            },
-            "y": {
-              "field": "Country",
-              "axis": {"grid": false},
-              "title": null,
-              "sort": null
-            },
-            "color": {
-              "field": "humidity",
-              "type": "quantitative",
-              "scale": {"scheme": "brownbluegreen"},
-              "title": null,
-              "sort": "ascending"
-            },
-            "tooltip": [
-              {"field": "Country", "type": "nominal"},
-              {
-                "field": "date",
-                "timeUnit": "monthdate",
-                "type": "ordinal",
-                "title": "Date"
-              },
-              {
-                "field": "humidity",
-                "type": "quantitative",
-                "title": "Humidity (%)"
-              }
-            ],
-            "opacity": {
-              "condition": {"selection": "country", "value": 1},
-              "value": 0.2
-            }
-          },
-          "transform": [
-            {
-              "filter": "datum.Country == 'United States of America' || datum.Country == 'Italy' || datum.Country == 'Spain' || datum.Country == 'Germany' || datum.Country == 'China' || datum.Country == 'France' || datum.Country == 'Iran' || datum.Country == 'United Kingdom' || datum.Country == 'Switzerland' || datum.Country == 'Turkey'"
-            }
-          ]
+          {
+            "field": "humidity",
+            "type": "quantitative",
+            "title": "Humidity (%)"
+          }
+        ],
+        "opacity": {
+          "condition": {"selection": "country", "value": 1},
+          "value": 0.2
+        }
+      },
+      "transform": [
+        {
+          "filter": "datum.Country == 'United States of America' || datum.Country == 'Italy' || datum.Country == 'Spain' || datum.Country == 'Germany' || datum.Country == 'China' || datum.Country == 'France' || datum.Country == 'Iran' || datum.Country == 'United Kingdom' || datum.Country == 'Switzerland' || datum.Country == 'Turkey'"
         }
       ]
     }
-  ],
-  "config": {}
+    
+  ]
+    }
+  ]
 }
