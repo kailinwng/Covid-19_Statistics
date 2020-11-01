@@ -4,11 +4,11 @@
     "width":500,
   "height":400,
   "data": {
-    "url": "https://raw.githubusercontent.com/kailinwng/FIT3179-Viz-2/main/data/COVID.csv"
+    "url": "https://raw.githubusercontent.com/kailinwng/FIT3179-Viz-2/a1e725b895baa84084abf25787509098447c33f1/data/COVID.csv"
   },
   "mark": "area",
   "transform": [
-    {"filter": "datum.continent!=''"},
+    {"filter": "datum.continent!=''&& datum.continent!='International'"},
     {"filter": {"timeUnit": "year", "field": "date", "gt": "2019"}}
   ],
   "selection": {"grid": {
@@ -18,16 +18,7 @@
     "x": {
       "timeUnit": "month",
       "field": "date",
-      "title": "Month",
-      "axis": {
-        "gridDash": {
-          "condition": {
-            "test": {"field": "date", "timeUnit": "month", "equal": "9"},
-            "value": []
-          },
-          "value": [2, 2]
-        }
-      }
+      "title": "Month"
     },
     "y": {"aggregate": "sum", "field": "total_cases", "title": "Active Cases"},
     "color": {
