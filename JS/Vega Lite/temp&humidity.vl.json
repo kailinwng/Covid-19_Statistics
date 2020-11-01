@@ -10,8 +10,8 @@
   "hconcat": [
     {
       "title": {"text": "Temperature (°C)"},
-      "width": 550,
-      "height": 300,
+      "width": 300,
+      "height": 200,
       "mark": {"type": "rect", "strokeWidth": 2},
       "selection": {
         "country": {"type": "interval"},
@@ -64,8 +64,8 @@
     },
     {
       "title": {"text": "Humidity (%)"},
-      "width": 550,
-      "height": 300,
+      "width": 300,
+      "height": 200,
       "mark": {"type": "rect"},
       "selection": {
         "country": {"type": "interval"},
