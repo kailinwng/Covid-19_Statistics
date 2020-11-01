@@ -152,7 +152,7 @@
         "color": {"value": "black"},
         "opacity": {
           "condition": {
-            "test": "datum['Country'] == 'China' || datum['Country'] == 'Singapore' || datum['Country'] == 'Australia' || datum['Country'] == 'New Zealand' || datum['Country'] == 'Italy' || datum['Country'] == 'Syria' ||  datum['Country'] == 'United States' ||  datum['Country'] == 'Fiji' ||  datum['Country'] == 'Taiwan'",
+            "test": "datum['Country'] == 'China' || datum['Country'] == 'Singapore' || datum['Country'] == 'Australia' || datum['Country'] == 'New Zealand' || datum['Country'] == 'Italy' || datum['Country'] == 'Syria' ||  datum['Country'] == 'United States of America' ||  datum['Country'] == 'Fiji' ||  datum['Country'] == 'Taiwan'",
             "value": 1
           },
           "value": 0
