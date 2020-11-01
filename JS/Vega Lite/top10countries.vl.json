@@ -9,7 +9,7 @@
       "width": 300,
       "height": 460,
 
-      "mark": {"type": "line"},
+      "mark": {"type": "bar"},
       "selection": {
         "country": {"type": "multi", "fields": ["Country"], "bind": "legend"},
         "grid": {
@@ -28,10 +28,24 @@
           "field": "confirmed",
           "aggregate": "sum",
           "axis": {"grid": true},
-          
           "title": "Confirmed Cases"
         },
-        "color": {"field": "Country"},
+        "color": {"field": "Country","scale": {
+        "range": [
+              
+              "#beaed4",
+              "#fbb4ae",
+              
+              "#ffff99",
+              "#fdc086",
+              
+              
+              "#a6cee3",
+              "#fbb4ae",
+              "#386cb0"
+              
+        ]
+      }},
         "tooltip": [
           {"field": "Country", "type": "nominal"},
           {
