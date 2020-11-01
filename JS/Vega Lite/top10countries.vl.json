@@ -29,7 +29,7 @@
           "aggregate": "sum",
           "axis": {"grid": true},
           
-          "title": "Total Confirmed Cases"
+          "title": "Confirmed Cases"
         },
         "color": {"field": "Country"},
         "tooltip": [
