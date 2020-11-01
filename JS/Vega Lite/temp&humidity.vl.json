@@ -7,11 +7,11 @@
     "legend": {"color": "independent"},
     "scale": {"color": "independent"}
   },
-  "hconcat": [
+  "vconcat": [
     {
       "title": {"text": "Temperature (°C)"},
-      "width": 260,
-      "height": 300,
+      "width": 600,
+      "height": 200,
       "mark": {"type": "rect", "strokeWidth": 2},
       "selection": {
         "country": {"type": "interval"},
@@ -64,8 +64,8 @@
     },
     {
       "title": {"text": "Humidity (%)"},
-      "width": 260,
-      "height": 300,
+      "width": 600,
+      "height": 200,
       "mark": {"type": "rect"},
       "selection": {
         "country": {"type": "interval"},
