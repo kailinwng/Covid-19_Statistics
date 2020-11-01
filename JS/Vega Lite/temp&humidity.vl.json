@@ -1,0 +1,117 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+  "data": {
+    "url": "https://raw.githubusercontent.com/kailinwng/FIT3179-Viz-2/main/data/COVID-%20Temperature%20and%20Humidity.csv"
+  },
+  "resolve": {
+    "legend": {"color": "independent"},
+    "scale": {"color": "independent"}
+  },
+  "hconcat": [
+    {
+      "title": {"text": "Temperature (°C)"},
+      "width": 550,
+      "height": 300,
+      "mark": {"type": "rect", "strokeWidth": 2},
+      "selection": {
+        "country": {"type": "interval"},
+        "grid": {"type": "interval", "bind": "scales"}
+      },
+      "encoding": {
+        "x": {
+          "timeUnit": "monthdate",
+          "field": "date",
+          "type": "ordinal",
+          "title": null
+        },
+        "y": {
+          "field": "Country",
+          "axis": {"grid": false},
+          "title": null,
+          "sort": null
+        },
+        "color": {
+          "field": "temperature",
+          "type": "quantitative",
+          "scale": {"scheme": "redyellowblue"},
+          "title": null,
+          "sort": "descending"
+        },
+        "tooltip": [
+          {"field": "Country", "type": "nominal"},
+          {
+            "field": "date",
+            "timeUnit": "monthdate",
+            "type": "ordinal",
+            "title": "Date"
+          },
+          {
+            "field": "temperature",
+            "type": "quantitative",
+            "title": "Temperature (°C)"
+          }
+        ],
+        "opacity": {
+          "condition": {"selection": "country", "value": 1},
+          "value": 0.2
+        }
+      },
+      "transform": [
+        {
+          "filter": "datum.Country == 'United States of America' || datum.Country == 'India' || datum.Country == 'Brazil' || datum.Country == 'Russia' || datum.Country == 'France' || datum.Country == 'Spain' || datum.Country == 'Argentina' || datum.Country == 'Colombia' || datum.Country == 'United Kingdom' || datum.Country == 'Mexico'"
+        }
+      ]
+    },
+    {
+      "title": {"text": "Humidity (%)"},
+      "width": 550,
+      "height": 300,
+      "mark": {"type": "rect"},
+      "selection": {
+        "country": {"type": "interval"},
+        "grid": {"type": "interval", "bind": "scales"}
+      },
+      "encoding": {
+        "x": {
+          "timeUnit": "monthdate",
+          "field": "date",
+          "type": "ordinal",
+          "title": null
+        },
+        "y": {
+          "field": "Country",
+          "axis": {"grid": false},
+          "title": null,
+          "sort": null
+        },
+        "color": {
+          "field": "humidity",
+          "type": "quantitative",
+          "scale": {"scheme": "brownbluegreen"},
+          "title": null,
+          "sort": "ascending"
+        },
+        "tooltip": [
+          {"field": "Country", "type": "nominal"},
+          {
+            "field": "date",
+            "timeUnit": "monthdate",
+            "type": "ordinal",
+            "title": "Date"
+          },
+          {"field": "humidity", "type": "quantitative", "title": "Humidity (%)"}
+        ],
+        "opacity": {
+          "condition": {"selection": "country", "value": 1},
+          "value": 0.2
+        }
+      },
+      "transform": [
+        {
+          "filter": "datum.Country == 'United States of America' || datum.Country == 'India' || datum.Country == 'Brazil' || datum.Country == 'Russia' || datum.Country == 'France' || datum.Country == 'Spain' || datum.Country == 'Argentina' || datum.Country == 'Colombia' || datum.Country == 'United Kingdom' || datum.Country == 'Mexico'"
+        }
+      ]
+    }
+  ],
+  "config": {}
+}
