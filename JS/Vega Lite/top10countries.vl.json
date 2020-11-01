@@ -6,7 +6,7 @@
   },
   "hconcat": [
     {
-      "width": 260,
+      "width": 250,
       "height": 460,
 
       "mark": {"type": "bar"},
