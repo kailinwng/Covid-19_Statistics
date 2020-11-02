@@ -122,7 +122,7 @@
         "color": {"value": "red"},
                         "size": {
           "condition": {
-        "selection": "loc", "value": 120
+        "selection": "loc", "value": 140
       },"value":40
         },
         "tooltip": [
