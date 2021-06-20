@@ -1,4 +1,3 @@
-# FIT3179-Viz-2
-FIT3179 Data Visualization Assignment 2
+This repository is of a webpage that displays several visualisations for the statistics of Covid-19.
 
-he HTML page containing my visualization charts can be seen at: https://kailinwng.github.io/FIT3179-Viz-2/
+The HTML page containing my visualization charts can be seen at: https://kailinwng.github.io/FIT3179-Viz-2/
