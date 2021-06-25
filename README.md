@@ -3,4 +3,4 @@ This repository is of a webpage that displays several visualisations for the sta
 The HTML page containing my visualization charts can be seen at: https://kailinwng.github.io/Covid-19_Statistics/
 
 
-Dataset sources is provided in data/sources.txt
+Dataset sources is provided in data/datasets_sources.txt
